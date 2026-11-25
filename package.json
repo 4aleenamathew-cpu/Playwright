@@ -1,0 +1,26 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "clientapp": "npx playwright test clientapp.spec.js",
+    "webtest": "npx playwright test --grep @web",
+    "apitest": "npx playwright test --grep @api",
+    "safari": "npx playwright test CilentappobjectTS.spec.ts --config playwright.config1.js --project=safari",
+    "chrome": "npx playwright test CilentappobjectTS.spec.ts --config playwright.config1.js --project=chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3",
+    "allure-playwright": "^3.15.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
