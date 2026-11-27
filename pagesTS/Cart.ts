@@ -14,8 +14,8 @@ export class Cart{
          this.checkoutBtn=page.locator("#checkout")
     }
     async verifyCart(){
-await this.item.waitFor()
-   await expect(this.item).toBeVisible()
+await this.item.nth(0).waitFor()
+   await expect(this.item.nth(0)).toBeVisible()
     }
     async checkout(){
         await this.checkoutBtn.click()
